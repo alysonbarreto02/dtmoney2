@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     :root{
         --background: #f0f2f5;
-        --shape: #ffffff
+        --shape: #fff
 
         --red: #e52e4d;
         --blue: #5429cc;
@@ -27,7 +27,7 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
-    border-style, input, textarea, button {
+    body, input, textarea, button {
         font-family: 'Poppins', sans-serif; 
         font-weight: 400;
     }
