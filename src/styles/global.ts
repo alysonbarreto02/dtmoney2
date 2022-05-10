@@ -3,15 +3,17 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     :root{
         --background: #f0f2f5;
-        --shape: #fff
+        --shape: #fff;
 
         --red: #e52e4d;
         --blue: #5429cc;
 
-        --blue-light: #6933ff
+        --blue-light: #6933ff;
         
-        --text-title: #363f5f
-        --text-body: #969cb3
+        --text-title: #363f5f;
+        --text-body: #969cb3;
+
+        --green: #33CC95;
 
 
     }
@@ -53,5 +55,40 @@ export const GlobalStyle = createGlobalStyle`
     [disabled]{
         opacity: 0.6;
         cursor: not-allowed;
+    }
+
+    .react-modal-overlay{
+        background: rgba(0, 0, 0, 0.5);
+
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .react-modal-content{
+        width: 100%;
+        max-width: 576px;
+        background: var(--background);
+        position: relative;
+        border-radius: 0.25rem;
+    }
+
+    .react-modal-close{
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        border: 0;
+        background: transparent;
+
+        transition: 0.2s;
+
+        &:hover{
+            filter: brightness(0.9);
+        }
     }
 `
